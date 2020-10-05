@@ -1,0 +1,31 @@
+<body id="black">
+    <!----------------- MAIN ---------------------------->
+    <main>
+      <section class="form">
+          <div id="signup">
+            <h1>S'enregistrer</h1>
+            <form action="<?=$requestUrl?>/user/register" method="POST">
+              <fieldset>
+                <label> Prénom<span class="req">*</span> </label>
+                <input type="text" required autocomplete="off" name="firstname" />
+              </fieldset>
+              <fieldset>
+                <label> Nom<span class="req">*</span> </label>
+                <input type="text" name="lastname" />
+              </fieldset>
+              <fieldset>
+                <label> Email<span class="req">*</span> </label>
+                <input type="email" required autocomplete="off" name="email" />
+              </fieldset>
+              <fieldset>
+                <label>
+                  Choisir un mot de passe<span class="req">*</span>
+                </label>
+                <input type="password" required autocomplete="off" name="password" />
+              </fieldset>
+              <button type="submit" value="Enregister" class="btn btn-block">S'enregistrer</button>
+            </form>
+          </div>
+      </section>
+    </main>
+  </body>

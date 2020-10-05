@@ -1,0 +1,22 @@
+  <body id="black">
+    <!----------------- MAIN ---------------------------->
+    <main>
+      <section class="form">
+          <div id="login">
+            <h1>Se connecter</h1>
+            <form action="<?=$requestUrl?>/user/login" method="POST">
+              <fieldset>
+                <label> Email<span class="req">*</span> </label>
+                <input type="email" name="email" />
+              </fieldset>
+              <fieldset>
+                <label> Mot de passe<span class="req">*</span> </label>
+                <input type="password" name="password" />
+              </fieldset>
+              <p class="forgot"><a href="<?= $wwwUrl ?>#">Mot de passe oublié ?</a></p>
+              <button type="submit" value="Connexion" class="btn btn-block">Se connecter</button>
+            </form>
+          </div>
+      </section>
+    </main>
+  </body>

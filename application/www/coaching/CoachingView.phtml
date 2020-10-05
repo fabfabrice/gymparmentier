@@ -1,0 +1,62 @@
+  <body id="black">
+    <!----------------- MAIN ---------------------------->
+    <main>
+      <h1>Coaching</h1>
+      <?php if(array_key_exists('user', $_SESSION)) {?>
+      <section class="booking">
+        <h2 class="price">
+          30€
+          <span>
+            pour une heure
+          </span>
+        </h2>
+        <form action="<?=$requestUrl?>/coaching" method="POST">
+          <p>
+            <input type="date" name="date" value="date" id="date" />
+          </p>
+          <fieldset>
+            <label for="available">Sélectionner un créneau :</label>
+            <select name="slot" id="slot">
+              <option value="9h00">9h00</option>
+              <option value="9h30">9h30</option>
+              <option value="10h00">10h00</option>
+              <option value="10h30">10h30</option>
+              <option value="11h00">11h00</option>
+              <option value="11h30">11h30</option>
+              <option value="12h00">12h00</option>
+              <option value="14h00">14h00</option>
+              <option value="14h30">14h30</option>
+              <option value="15h00">15h00</option>
+              <option value="15h30">15h30</option>
+              <option value="16h00">16h00</option>
+              <option value="16h30">16h30</option>
+              <option value="17h00">17h00</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="available">Choisir un coach :</label>
+            <select name="coach" id="coach">
+              <option value="Marc">Marc</option>
+              <option value="Pauline">Pauline</option>
+              <option value="Rachid">Rachid</option>
+              <option value="Mouloud">Mouloud</option>
+              <option value="Karine">Karine</option>
+              <option value="Sébastien">Sébastien</option>
+              <option value="Annie">Annie</option>
+            </select>
+          </fieldset>
+          <button type="submit" class="btn btn-block">réserver</button>
+        </form>
+      </section>
+
+      <?php } else {?>
+        <a href="<?= $requestUrl ?>/user/login">
+          <h2>connectez vous pour réserver un coach !</h2>
+        </a><br>
+        <a href="<?= $requestUrl ?>/user/register">
+          <p>si vous n'avez pas encore de compte, enregistrez vous !</p>
+        </a>
+      <?php } ?>
+      
+    </main>
+  </body>

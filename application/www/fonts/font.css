@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Frontage-Regular';
+  src: url('Frontage-Regular.eot');
+  src: url('Frontage-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Frontage-Regular.svg#Frontage-Regular') format('svg'),
+       url('Frontage-Regular.ttf') format('truetype'),
+       url('Frontage-Regular.woff') format('woff'),
+       url('Frontage-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,410 @@
+
+<!----------------- SLIDER -------------------------->
+    <section class="slider">
+      <nav class="project-toolbar">
+        <button id="play-pause" class="btn" title="Démarrer le diaporama">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </button>
+        <button id="random" class="btn" title="Image aléatoire">
+          <i class="fa fa-random" aria-hidden="true"></i>
+        </button>
+      </nav>
+      <div class="slider-layout">
+        <figure class="slider-figure active">
+          <img class="slider-picture" src="<?= $wwwUrl ?>/img/carroussel1.jpg" alt="" />
+          <figcaption class="slider-legend">
+            Gym Paris Parmentier
+          </figcaption>
+        </figure>
+        <figure class="slider-figure">
+          <img class="slider-picture" src="<?= $wwwUrl ?>/img/carroussel2.jpg" alt="" />
+          <figcaption class="slider-legend">
+            9 cours collectifs
+            <a href="<?= $requestUrl ?>/courses" class="btn">En savoir plus</a>
+          </figcaption>
+        </figure>
+        <figure class="slider-figure">
+          <img class="slider-picture" src="<?= $wwwUrl ?>/img/carroussel3.jpg" alt="" />
+          <figcaption class="slider-legend">
+            Gym App
+            <a href="<?= $requestUrl ?>/app" class="btn">En savoir plus</a>
+          </figcaption>
+        </figure>
+        <nav class="slider-navigation">
+          <a
+            href="<?= $requestUrl ?>#"
+            rel="prev"
+            id="prev"
+            class="prev"
+            title="Image précédente"
+          >
+            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+          </a>
+          <a href="<?= $requestUrl ?>#" rel="next" id="next" class="next" title="Image suivante">
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+          </a>
+        </nav>
+      </div>
+    </section>
+    <!----------------- MAIN ---------------------------->
+    <main>
+      <section class="flex" id="info">
+        <a href="<?= $requestUrl ?>/booking" class="grow">
+          <article class="red-card">
+            <h2>
+              Abonnement
+              <span>Tout compris</span>
+            </h2>
+            <h2 class="price">
+              39.99€
+              <span>par mois</span>
+            </h2>
+            <ul>
+              <li><p>> accès au club</p></li>
+              <li><p>> cours collectifs</p></li>
+            </ul>
+          </article>
+        </a>
+        <a href="<?= $requestUrl ?>/session" class="grow">
+          <article class="red-card">
+            <h2>
+              Séance
+              <span>à la carte</span>
+            </h2>
+            <h2 class="price">
+              10€
+              <span>la séance</span>
+            </h2>
+            <ul>
+              <li><p>> sélection de cours</p></li>
+              <li><p>> nombreux créneaux</p></li>
+            </ul>
+          </article>
+        </a>
+        <a href="<?= $requestUrl ?>/coaching" class="grow">
+          <article class="red-card">
+            <h2>
+              Coaching
+              <span>personnalisé</span>
+            </h2>
+            <h2 class="price">
+              30€
+              <span>pour 1 heure</span>
+            </h2>
+            <ul>
+              <li><p>> coach diplômé</p></li>
+              <li><p>> suivi personnalisé</p></li>
+            </ul>
+          </article>
+        </a>
+      </section>
+      <section class="activities">
+        <h1>Cours collectifs</h1>
+        <section class="flex">
+          <figure id="activity-bodybalance">
+            <img
+              class="activity-bodybalance_picture"
+              src="<?= $wwwUrl ?>/img/activities-body-balance-nb.jpg"
+              alt=""
+            />
+            <figcaption class="activity-legend">
+              <h3>Body balance</h3>
+              <a href="<?= $requestUrl ?>/courses#activity-bodybalance" class="more"
+                >En savoir plus
+                <i class="fas fa-plus-circle"></i>
+              </a>
+            </figcaption>
+          </figure>
+          <figure id="activity-bodypump">
+            <img
+              class="activity-bodypump_picture"
+              src="<?= $wwwUrl ?>/img/activities-body-pump-nb.jpg"
+              alt=""
+            />
+            <figcaption class="activity-legend">
+              <h3>Body pump</h3>
+              <a href="<?= $requestUrl ?>/courses#activity-bodypump" class="more"
+                >En savoir plus
+                <i class="fas fa-plus-circle"></i>
+              </a>
+            </figcaption>
+          </figure>
+          <figure id="activity-abdos">
+            <img
+              class="activity-abdos_picture"
+              src="<?= $wwwUrl ?>/img/activities-cuisse-abdos-fessiers-nb.jpg"
+              alt=""
+            />
+            <figcaption class="activity-legend">
+              <h3>Abdos fessiers</h3>
+              <a href="<?= $requestUrl ?>/courses#activity-abdos" class="more"
+                >En savoir plus
+                <i class="fas fa-plus-circle"></i>
+              </a>
+            </figcaption>
+          </figure>
+          <figure id="activity-fullbody">
+            <img
+              class="activity-fullbody_picture"
+              src="<?= $wwwUrl ?>/img/activities-full-body-nb.jpg"
+              alt=""
+            />
+            <figcaption class="activity-legend">
+              <h3>Full body</h3>
+              <a href="<?= $requestUrl ?>/courses#activity-fullbody" class="more"
+                >En savoir plus
+                <i class="fas fa-plus-circle"></i>
+              </a>
+            </figcaption>
+          </figure>
+          <figure id="activity-cardio">
+            <img
+              class="activity-cardio_picture"
+              src="<?= $wwwUrl ?>/img/activities-cardio-cycling-nb.jpg"
+              alt=""
+            />
+            <figcaption class="activity-legend">
+              <h3>Cardio training</h3>
+              <a href="<?= $requestUrl ?>/courses#activity-cardio" class="more"
+                >En savoir plus
+                <i class="fas fa-plus-circle"></i>
+              </a>
+            </figcaption>
+          </figure>
+          <figure id="activity-yoga">
+            <img
+              class="activity-yoga_picture"
+              src="<?= $wwwUrl ?>/img/activities-yoga-nb.jpg"
+              alt=""
+            />
+            <figcaption class="activity-legend">
+              <h3>Yoga</h3>
+              <a href="<?= $requestUrl ?>/courses#activity-yoga" class="more"
+                >En savoir plus
+                <i class="fas fa-plus-circle"></i>
+              </a>
+            </figcaption>
+          </figure>
+          <figure id="activity-postural">
+            <img
+              class="activity-postural_picture"
+              src="<?= $wwwUrl ?>/img/activities-postural-ball-nb.jpg"
+              alt=""
+            />
+            <figcaption class="activity-legend">
+              <h3>Postural ball</h3>
+              <a href="<?= $requestUrl ?>/courses#activity-postural" class="more"
+                >En savoir plus
+                <i class="fas fa-plus-circle"></i>
+              </a>
+            </figcaption>
+          </figure>
+          <figure id="activity-circuit">
+            <img
+              class="activity-circuit_picture"
+              src="<?= $wwwUrl ?>/img/activities-circuit-training-nb.jpg"
+              alt=""
+            />
+            <figcaption class="activity-legend">
+              <h3>Circuit training</h3>
+              <a href="<?= $requestUrl ?>/courses#activity-circuit" class="more"
+                >En savoir plus
+                <i class="fas fa-plus-circle"></i>
+              </a>
+            </figcaption>
+          </figure>
+          <figure id="activity-crossfit">
+            <img
+              class="activity-crossfit_picture"
+              src="<?= $wwwUrl ?>/img/activities-crossfit-nb.jpg"
+              alt=""
+            />
+            <figcaption class="activity-legend">
+              <h3>Crossfit</h3>
+              <a href="<?= $requestUrl ?>/courses#activity-crossfit" class="more"
+                >En savoir plus
+                <i class="fas fa-plus-circle"></i>
+              </a>
+            </figcaption>
+          </figure>
+        </section>
+      </section>
+      <a href="<?= $requestUrl ?>/planning">
+        <section class="flex" id="planning">
+          <article class="day">
+            <h4>lundi</h4>
+            <div>
+              <h5>abdos fessiers</h5>
+              <p>9h30-10h30</p>
+            </div>
+            <div>
+              <h5>body pump</h5>
+              <p>10h30-11h30</p>
+            </div>
+            <div>
+              <h5>body balance</h5>
+              <p>11h30-12h30</p>
+            </div>
+            <div>
+              <h5>full body</h5>
+              <p>14h00-15h00</p>
+            </div>
+            <div>
+              <h5>crossfit</h5>
+              <p>15h00-16h00</p>
+            </div>
+            <div>
+              <h5>yoga</h5>
+              <p>16h30-18h30</p>
+            </div>
+          </article>
+          <article class="day">
+            <h4>mardi</h4>
+            <div>
+              <h5>abdos fessiers</h5>
+              <p>9h30-10h30</p>
+            </div>
+            <div>
+              <h5>postural ball</h5>
+              <p>10h30-11h30</p>
+            </div>
+            <div>
+              <h5>crossfit</h5>
+              <p>11h30-12h30</p>
+            </div>
+            <div>
+              <h5>circuit training</h5>
+              <p>14h00-15h00</p>
+            </div>
+            <div>
+              <h5>cardio training</h5>
+              <p>15h00-16h00</p>
+            </div>
+            <div>
+              <h5>body pump</h5>
+              <p>16h30-17h30</p>
+            </div>
+          </article>
+          <article class="day">
+            <h4>mercredi</h4>
+            <div>
+              <h5>full body</h5>
+              <p>9h30-10h30</p>
+            </div>
+            <div>
+              <h5>body balance</h5>
+              <p>10h30-11h30</p>
+            </div>
+            <div>
+              <h5>body pump</h5>
+              <p>11h30-12h30</p>
+            </div>
+            <div>
+              <h5>cardio training</h5>
+              <p>14h30-15h30</p>
+            </div>
+            <div>
+              <h5>circuit training</h5>
+              <p>15h30-16h30</p>
+            </div>
+            <div>
+              <h5>yoga</h5>
+              <p>17h00-19h00</p>
+            </div>
+          </article>
+          <article class="day">
+            <h4>jeudi</h4>
+            <div>
+              <h5>abdos fessiers</h5>
+              <p>9h30-10h30</p>
+            </div>
+            <div>
+              <h5>body pump</h5>
+              <p>10h30-11h30</p>
+            </div>
+            <div>
+              <h5>body balance</h5>
+              <p>11h30-12h30</p>
+            </div>
+            <div>
+              <h5>crossfit</h5>
+              <p>14h30-15h30</p>
+            </div>
+            <div>
+              <h5>postural ball</h5>
+              <p>15h30-16h30</p>
+            </div>
+            <div>
+              <h5>circuit training</h5>
+              <p>17h00-18h00</p>
+            </div>
+          </article>
+          <article class="day">
+            <h4>vendredi</h4>
+            <div>
+              <h5>full body</h5>
+              <p>9h30-10h30</p>
+            </div>
+            <div>
+              <h5>body balance</h5>
+              <p>11h00-12h00</p>
+            </div>
+            <div>
+              <h5>cardio training</h5>
+              <p>14h00-15h00</p>
+            </div>
+            <div>
+              <h5>circuit training</h5>
+              <p>16h00-17h00</p>
+            </div>
+            <div>
+              <h5>body pump</h5>
+              <p>17h00-18h00</p>
+            </div>
+            <div>
+              <h5>yoga</h5>
+              <p>18h30-20h30</p>
+            </div>
+          </article>
+          <article class="day">
+            <h4>samedi</h4>
+            <div>
+              <h5>yoga</h5>
+              <p>9h30-11h30</p>
+            </div>
+            <div>
+              <h5>crossfit</h5>
+              <p>12h00-13h00</p>
+            </div>
+            <div>
+              <h5>body balance</h5>
+              <p>14h30-15h30</p>
+            </div>
+            <div>
+              <h5>full body</h5>
+              <p>15h30-16h30</p>
+            </div>
+            <div>
+              <h5>abdos fessiers</h5>
+              <p>16h30-17h30</p>
+            </div>
+            <div>
+              <h5>postural ball</h5>
+              <p>17h30-18h15</p>
+            </div>
+          </article>
+        </section>
+      </a>
+      <section>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10498.354360103403!2d2.375679998464323!3d48.8660550679631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4616dd8318fd6faa!2sGym%20Studio%20Parmentier!5e0!3m2!1sfr!2sfr!4v1595254568289!5m2!1sfr!2sfr"
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border: 0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </section>
+    </main>

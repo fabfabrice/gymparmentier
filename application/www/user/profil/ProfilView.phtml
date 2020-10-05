@@ -1,0 +1,77 @@
+<body id="black">
+    <!----------------- MAIN ---------------------------->
+    <main>
+      <h1>Mon profil</h1>
+      <section>
+        <h3 class="dashboard-title">Séance à la carte</h3>
+        <div class="table">
+            <div>ID</div>
+            <div>Activités</div>
+            <div>
+              <i class="fas fa-trash-alt"></i>
+            </div>
+        </div>
+        <?php foreach($sessions as $session) {?>
+        <div class="table">
+            <div><?=$session['id']?></div>
+            <div><?=$session['activity']?></div>
+            <div>
+              <a href="<?= $requestUrl ?>/user/profil?id=<?= $session['id'] ?>">
+                <i class="fas fa-trash-alt"></i>
+              </a>
+            </div>
+        </div>
+        <?php }?>
+      </section>
+      <section>
+        <h3 class="dashboard-title">Abonnement</h3>
+        <div class="table">
+            <div>ID</div>
+            <div>Durée</div>
+            <div>Paiement</div>
+            <div>
+              <i class="fas fa-trash-alt"></i>
+            </div>
+        </div>
+        <?php foreach($bookings as $booking) {?>
+        <div class="table">
+            <div><?=$booking['id']?></div>
+            <div><?=$booking['duration']?></div>
+            <div><?=$booking['payment']?></div>
+            <div>
+              <a href="<?= $requestUrl ?>/user/profil?id=<?= $booking['id'] ?>">
+                <i class="fas fa-trash-alt"></i>
+              </a>
+            </div>
+        </div>
+        <?php }?>
+      </section>
+      <section>
+        <h3 class="dashboard-title">Coaching</h3>
+          <div class="table">
+            <div>ID</div>
+            <div>Date</div>
+            <div>Coach</div>
+            <div>Horaires</div>
+            <div>
+              <i class="fas fa-trash-alt"></i>
+            </div>
+          </div>
+          <?php foreach($coachings as $coaching) {?>
+            <div class="table">
+              <div><?=$coaching['id']?></div>
+              <div><?=$coaching['date']?></div>
+              <div><?=$coaching['coach']?></div>
+              <div><?=$coaching['slot']?></div>
+              <div>
+              <a href="<?= $requestUrl ?>/user/profil?id=<?= $coaching['id'] ?>">
+                <i class="fas fa-trash-alt"></i>
+              </a>
+            </div>
+            </div>
+            <?php }?>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>

@@ -1,0 +1,41 @@
+  <body id="black">
+    <!----------------- MAIN ---------------------------->
+    <main>
+      <h1>Abonnement</h1>
+      <?php if(array_key_exists('user', $_SESSION)) {?>
+      <section class="booking">
+        <h2 class="price">
+          39€
+          <span>
+            par mois
+          </span>
+        </h2>
+        <form action="<?=$requestUrl?>/booking" method="POST">
+        <fieldset>
+            <label for="available">Durée de l'abonnement :</label>
+            <select name="duration" id="duration">
+              <option value="1 mois">1 mois</option>
+              <option value="6 mois">6 mois</option>
+              <option value="12 mois">12 mois</option>
+            </select>
+            <select name="payment" id="payment">
+              <option value="prélèvement mensuel">prélèvement mensuel</option>
+              <option value="prélèvement annuel">prélèvement annuel</option>
+              <option value="paiement sur place">paiement sur place</option>
+            </select>
+          </fieldset>
+          <button type="submit" class="btn btn-block">s'abonner</button>
+        </form>
+      </section>
+
+      <?php } else {?>
+        <a href="<?= $requestUrl ?>/user/login">
+          <h2>connectez vous pour vous abonner !</h2>
+        </a><br>
+        <a href="<?= $requestUrl ?>/user/register">
+          <p>si vous n'avez pas encore de compte, enregistrez vous !</p>
+        </a>
+      <?php } ?>
+
+    </main>
+  </body>

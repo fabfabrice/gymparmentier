@@ -1,0 +1,156 @@
+  <body id="black">
+    <!----------------- MAIN ---------------------------->
+    <main>
+      <h1>Séance à la carte</h1>
+      <?php if(array_key_exists('user', $_SESSION)) {?>
+      <section class="booking">
+        <h2 class="price">
+          10€
+          <span>
+            la séance
+          </span>
+        </h2>
+        <form action="<?=$requestUrl?>/session" method="POST">
+          <fieldset>
+            <label for="available"
+              >Sélectionner un créneau pour la semaine du 19/09 au 24/09</label
+            ><br />
+            <select name="activity" id="activity">
+              <optgroup label="Lundi 19/09/20">
+                <option value="Lundi 19/09 - Abdos fessiers - 9h30-10h30"
+                  >Lundi 19/09 - Abdos fessiers - 9h30-10h30</option
+                >
+                <option value="Lundi 19/09 - Body Pump - 10h30-11h30"
+                  >Lundi 19/09 - Body Pump - 10h30-11h30</option
+                >
+                <option value="Lundi 19/09 - Body Balance - 11h30-12h30"
+                  >Lundi 19/09 - Body Balance - 11h30-12h30</option
+                >
+                <option value="Lundi 19/09 - Full Body - 14h00-15h00"
+                  >Lundi 19/09 - Full Body - 14h00-15h00</option
+                >
+                <option value="Lundi 19/09 - Crossfit - 15h00-16h00"
+                  >Lundi 19/09 - Crossfit - 15h00-16h00</option
+                >
+                <option value="Lundi 19/09 - Yoga - 16h30-18h30"
+                  >Lundi 19/09 - Yoga - 16h30-18h30</option
+                >
+              </optgroup>
+              <optgroup label="Mardi 20/09/20">
+                <option value="Mardi 20/09 - Abdos fessiers - 9h30-10h30"
+                    >Mardi 20/09 - Abdos fessiers - 9h30-10h30</option
+                  >
+                  <option value="Mardi 20/09 - Postural Ball - 10h30-11h30"
+                    >Mardi 20/09 - Postural Ball - 10h30-11h30</option
+                  >
+                  <option value="Mardi 20/09 - Crossfit - 11h30-12h30"
+                    >Mardi 20/09 - Crossfit - 11h30-12h30</option
+                  >
+                  <option value="Mardi 20/09 - Circuit Training - 14h00-15h00"
+                    >Mardi 20/09 - Circuit Training - 14h00-15h00</option
+                  >
+                  <option value="Mardi 20/09 - Cardio Training - 15h00-16h00"
+                    >Mardi 20/09 - Cardio Training - 15h00-16h00</option
+                  >
+                  <option value="Mardi 20/09 - Body Pump - 16h30-17h30"
+                    >Mardi 20/09 - Body Pump - 16h30-17h30</option
+                  >
+              </optgroup>
+              <optgroup label="Mercredi 21/09/20">
+                  <option value="Mercredi 21/09 - Full Body - 9h30-10h30"
+                    >Mercredi 21/09 - Full Body - 9h30-10h30</option
+                  >
+                  <option value="Mercredi 21/09 - Body Balance - 10h30-11h30"
+                    >Mercredi 21/09 - Body Balance - 10h30-11h30</option
+                  >
+                  <option value="Mercredi 21/09 - Body Pump - 11h30-12h30"
+                    >Mercredi 21/09 - Body Pump - 11h30-12h30</option
+                  >
+                  <option value="Mercredi 21/09 - Cardio Training - 14h30-15h30y"
+                    >Mercredi 21/09 - Cardio Training - 14h30-15h30</option
+                  >
+                  <option value="Mercredi 21/09 - Circuit Training - 15h30-16h30"
+                    >Mercredi 21/09 - Circuit Training - 15h30-16h30</option
+                  >
+                  <option value="Mercredi 21/09 - Yoga - 17h00-19h00"
+                    >Mercredi 21/09 - Yoga - 17h00-19h00</option
+                  >              
+              </optgroup>
+              <optgroup label="Jeudi 22/09/20">
+                  <option value="Jeudi 22/09 - Abdos fessiers - 9h30-10h30"
+                    >Jeudi 22/09 - Abdos fessiers - 9h30-10h30</option
+                  >
+                  <option value="Jeudi 22/09 - Body Pump - 10h30-11h30"
+                    >Jeudi 22/09 - Body Pump - 10h30-11h30</option
+                  >
+                  <option value="Jeudi 22/09 - Body Balance - 11h30-12h30"
+                    >Jeudi 22/09 - Body Balance - 11h30-12h30</option
+                  >
+                  <option value="Jeudi 22/09 - Crossfit - 14h30-15h30"
+                    >Jeudi 22/09 - Crossfit - 14h30-15h30</option
+                  >
+                  <option value="Jeudi 22/09 - Postural Ball - 15h30-16h30"
+                    >Jeudi 22/09 - Postural Ball - 15h30-16h30</option
+                  >
+                  <option value="Jeudi 22/09 - Circuit Training - 17h00-18h00"
+                    >Jeudi 22/09 - Circuit Training - 17h00-18h00</option
+                  >              
+              </optgroup>
+              <optgroup label="Vendredi 23/09/20">
+                  <option value="Vendredi 23/09 - Full Body - 9h30-10h30"
+                    >Vendredi 23/09 - Full Body - 9h30-10h30</option
+                  >
+                  <option value="Vendredi 23/09 - Body Balance - 11h00-12h00"
+                    >Vendredi 23/09 - Body Balance - 11h00-12h00</option
+                  >
+                  <option value="Vendredi 23/09 - Cardio Training - 14h00-15h00"
+                    >Vendredi 23/09 - Cardio Training - 14h00-15h00</option
+                  >
+                  <option value="Vendredi 23/09 - Circuit Training - 16h00-17h00"
+                    >Vendredi 23/09 - Circuit Training - 16h00-17h00</option
+                  >
+                  <option value="Vendredi 23/09 - Body Pump - 17h00-18h00"
+                    >Vendredi 23/09 - Body Pump - 17h00-18h00</option
+                  >
+                  <option value="Vendredi 23/09 - Yoga - 18h30-20h30"
+                    >Vendredi 23/09 - Yoga - 18h30-20h30</option
+                  >              
+              </optgroup>
+              <optgroup label="Samedi 24/09/20">
+                  <option value="Samedi 24/09 - Yoga - 9h30-11h30"
+                    >Samedi 24/09 - Yoga - 9h30-11h30</option
+                  >
+                  <option value="Samedi 24/09 - Crossfit - 12h00-13h00"
+                    >Samedi 24/09 - Crossfit - 12h00-13h00</option
+                  >
+                  <option value="Samedi 24/09 - Body Balance - 14h30-15h30"
+                    >Samedi 24/09 - Body Balance - 14h30-15h30</option
+                  >
+                  <option value="Samedi 24/09 - Full Body - 15h30-16h30"
+                    >Samedi 24/09 - Full Body - 15h30-16h30</option
+                  >
+                  <option value="Samedi 24/09 - Abdos fessiers - 16h30-17h30"
+                    >Samedi 24/09 - Abdos fessiers - 16h30-17h30</option
+                  >
+                  <option value="Samedi 24/09 - Postural Ball - 17h30-18h30"
+                    >Samedi 24/09 - Postural Ball - 17h30-18h30</option
+                  >              
+              </optgroup>
+            </select>
+          </fieldset>
+          <button type="submit" class="btn btn-block">réserver</button>
+        </form>
+      </section>
+
+      <?php } else {?>
+        <a href="<?= $requestUrl ?>/user/login">
+          <h2>connectez vous pour réserver une séance !</h2>
+        </a><br>
+        <a href="<?= $requestUrl ?>/user/register">
+          <p>si vous n'avez pas encore de compte, enregistrez vous !</p>
+        </a>
+      <?php } ?>
+
+    </main>
+    
+  </body>
